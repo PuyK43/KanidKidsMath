@@ -30,7 +30,7 @@
     h2 {
     display: inline;
     }
-    #button1,#button {
+    #button1,#button,#button3,#button4 {
 	  color: white;
     border-radius: 10px;
     border-color: #009933;
@@ -51,6 +51,12 @@
 	  background-color: #009933;
     }
     #button2:hover {
+    background-color: black;
+    }
+    #button3:hover {
+    background-color: black;
+    }
+    #button4:hover {
     background-color: black;
     }
     #H1{
@@ -91,9 +97,25 @@
             <br><br><div id="check"></div>
             <br><div id="result"></div>
             </center>
+        </div> <br><br>
+
+        <div class="Box">
+        <center><strong>
+        <h2 id="Frontnum1"></h2>
+        <h2> +</h2>
+        <h2 id="behindnum1"></h2>
+        </strong>
+        <script src = "Addition1.js"></script>
+        <br><br><input type="number" class="input-number" id="myanswer1">
+        <input type="button" id="button3" value="ตรวจคำตอบ" onclick="check1()">
+        <input type="button" id="button4" value="เฉลย" onclick="answer1()">
+        <br><br><div id="check1"></div>
+        <br><div id="result1"></div>
+        </center>
         </div>
+
         <center><br><input type="button" id="button2" onclick="window.location.reload()" value="เปลี่ยนโจทย์"></center>
-      </div>
+      </div><br>
     
 
   </body>
